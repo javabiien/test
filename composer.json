@@ -1,0 +1,8 @@
+{
+    "name": "compotest/compotest",
+    "description": "create a comoser git project",
+    "type": "project",
+    "require": {
+        "php": "^5.3.3 || ^7.0"
+    }
+}
