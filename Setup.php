@@ -11,7 +11,7 @@ class Setup
     {
         $composer = $event->getComposer();
         // do stuff
-        echo "Welcome to Infity!\n";
+        echo "Welcome to CompoTest!\n";
     }
 
     public static function postAutoloadDump(Event $event)
@@ -60,7 +60,7 @@ class Setup
         echo 'Welcome, CompoTest will be installed soon!\n';
         // create cache dir
         self::createCacheDir();
-        self::htaccess();
+        self::htaccess("/");
     }
 }
 
