@@ -12,10 +12,10 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "Infity\\Setup::postUpdate"
+            "compotest\\Setup::postUpdate"
         ],
         "post-update-cmd": [
-            "Infity\\Setup::postUpdate"
+            "compotest\\Setup::postUpdate"
         ]
     }
 }
