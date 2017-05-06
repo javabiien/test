@@ -3,8 +3,7 @@
     "description": "create a comoser git project",
     "type": "project",
     "autoload": {
-        "psr-4": { "": "app/core/_install/script" },
-        "classmap": [ "app/core/_install/script/Setup.php" ]
+        "classmap": [ "Setup.php" ]
     },
     "require": {
         "php": "^5.3.3 || ^7.0",
