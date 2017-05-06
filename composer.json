@@ -2,7 +2,22 @@
     "name": "compotest/compotest",
     "description": "create a comoser git project",
     "type": "project",
+    "autoload": {
+        "psr-4": { "": "app/core/_install/script" },
+        "classmap": [ "app/core/_install/script/Setup.php" ]
+    },
     "require": {
-        "php": "^5.3.3 || ^7.0"
+        "php": "^5.3.3 || ^7.0",
+        "twig/twig" : "^2.0",
+        "twig/extensions": "^1.0"
+    }
+    "scripts": {
+        "post-install-cmd": [
+            "Infity\\Setup::postUpdate"
+        ],
+        "post-update-cmd": [
+            "Infity\\Setup::postUpdate"
+        ]
     }
 }
+
